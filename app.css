@@ -1,0 +1,45 @@
+body {
+    padding: 50px;
+}
+
+.thumb-image {
+    width: 50px;
+}
+
+.update-image {
+    width: 150px;
+}
+
+.typewriter h1{
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 7.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+.typewriter h1{
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 7.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+    from {max-width: 0}
+    to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+    from, to {border-color: transparent}
+    50% {border-color: black}
+}
