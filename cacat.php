@@ -1,19 +1,17 @@
 <?php
 
-class Person
+class ParentClass
 {
-    public $name = "Jane";
-    private $phone = 123456;
+    public $property1 = '1';
+    protected $property2 = '2';
+    private $property3 = '3';
 
-    public function __get($propName)
-    {
-        if ($propName === 'username') (
-            return $this->name;
-        )
-        return "Property \"$propName\" does not exist";
-    }
 }
 
-// construct
-$p = new Person();
-echo $p->username;
+class ChildClass extends ParentClass
+{
+
+}
+
+$obj = new ChildClass ();
+echo $obj->$property1;
