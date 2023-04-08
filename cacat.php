@@ -35,7 +35,7 @@ class Employee extends Person {
 
 class Student extends Person {
 
-    private $studentNO;
+    public $studentNO;
     public function __construct($name, $age, $phone, $studentNO)
     {
         parent::__construct($name, $age, $phone);
